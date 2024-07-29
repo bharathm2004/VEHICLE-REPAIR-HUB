@@ -1,0 +1,35 @@
+.service-container {
+    padding: 20px;
+  }
+  
+  .service-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .service-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .service-icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #007bff; /* You can change the color as needed */
+  }
+  
+  .book-now-button {
+    margin-top: 10px;
+    background-color:#007bff; /* You can change the color as needed */
+  }
+  .s-body{
+      background-repeat: no-repeat;
+      background-image: url('/images/bg1.jpg');
+      background-size: cover;
+    
+  }
+  

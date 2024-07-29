@@ -1,0 +1,46 @@
+/* Home.css */
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('/images/bg4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content {
+  font-family: "Raleway", sans-serif;
+  font-size: 82px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  text-shadow: 1px 1px 2px rgba(8, 8, 8, 0.7); /* Optional: Adds a slight shadow for better readability */
+}
+
+.title {
+  margin-right: 700px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 2.9rem;
+  color: black;
+  text-align: left;
+  margin-bottom: 140px;
+}
+
+.book-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}

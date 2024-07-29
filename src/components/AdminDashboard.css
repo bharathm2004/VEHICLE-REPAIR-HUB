@@ -1,0 +1,32 @@
+
+.admin-dashboard {
+    padding: 20px;
+    font-family: "Raleway", sans-serif;
+  }
+  
+  .admin-dashboard h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+  }
+  
+  .admin-dashboard table {
+    width: 100%;
+    
+    border-collapse: collapse;
+  }
+  
+  .admin-dashboard th, .admin-dashboard td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    
+  }
+  
+  .admin-dashboard th {
+    background-color: #f2f2f2;
+    text-align: left;
+    
+  }
+  
+   

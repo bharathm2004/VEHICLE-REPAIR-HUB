@@ -1,0 +1,92 @@
+/* Styling for the header component */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+   
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white; /* Background color */
+    padding: 10px 20px; /* Small vertical padding, horizontal padding for spacing */
+    height: 50px; /* Small height for the header */
+    color: white; /* White text color */
+  }
+  
+  .nav {
+    display: flex;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .nav a {
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 0;
+    color: black; /* Black text color for links */
+    text-decoration: none; /* Remove underline from links */
+    padding: 8px 12px; /* Padding around links */
+    position: relative;
+    transition: color 0.3s;
+  }
+  
+  .nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #007bff;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .nav a:hover {
+    color: #333; /* Darker color on hover */
+  }
+  
+  .user-menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between the user icon and email */
+  }
+  
+  .user-email {
+    color: black; /* Black color for the user email */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  .logout-button {
+    display: block;
+    background: none;
+    border: none;
+    color: black; /* Black color for logout button */
+    cursor: pointer; /* Pointer cursor for logout button */
+    margin-top: 5px; /* Small margin top */
+    padding: 8px 12px; /* Padding for logout button */
+    text-transform: uppercase; /* Uppercase text */
+  }
+  
+  .logout-button:hover {
+    color: #333; /* Darker color on hover */
+  }
+  
+  .user-icon {
+    font-size: 20px; /* Size of the user icon */
+    color: black; /* Color of the user icon */
+  }
+  

@@ -1,0 +1,83 @@
+/* src/components/Footer.css */
+@import url('https://fonts.googleapis.com/css2?family=Bosch+Sans:wght@400;700&display=swap');
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+  font-family: "Bosch Sans", sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  border-bottom: 1px solid #444;
+  margin-bottom: 20px;
+}
+
+.footer-column {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.footer-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.footer-text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.footer-icon {
+  margin-right: 10px;
+  color: #fff; 
+}
+
+.footer-link {
+  color: #fff;
+  display: block;
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.footer-bottom .footer-title {
+  margin-bottom: 10px;
+}
+
+.footer-bottom .footer-text {
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+.footer-social {
+  margin-top: 20px;
+}
+
+.social-icon {
+  color: #fff; 
+  margin: 0 10px;
+  font-size: 30px;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #007bff;
+}

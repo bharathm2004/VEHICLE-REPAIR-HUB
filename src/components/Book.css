@@ -1,0 +1,27 @@
+.booking-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .booking-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .booking-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .submit-button {
+    margin-top: 20px;
+  }
+  .b-body{
+    background-repeat: no-repeat;
+    background-image: url('/images/bg7.jpg');
+    background-size: cover;
+    height: 100vh;
+  }

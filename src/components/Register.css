@@ -1,0 +1,52 @@
+
+   .signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .signup-form {
+    border: 2px solid grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    
+
+  }
+  
+  .signup-form .MuiFormControl-root {
+    margin: 9px;
+    width: 100%;
+  }
+  
+  .signup-form .form-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .signup-form .form-column {
+    width: 48%;
+  }
+  
+  .signup-form .MuiButton-root {
+    margin-top: 16px;
+  }
+  
+  .signup-form .login-text {
+    margin-top: 16px;
+  }
+  
+  .h {
+    font-family: "Raleway", sans-serif;
+  }
+  .r-body{
+    background-repeat: no-repeat;
+    background-image: url('/images/bg6.jpg');
+    background-size: cover;
+    height: 100vh;
+  }

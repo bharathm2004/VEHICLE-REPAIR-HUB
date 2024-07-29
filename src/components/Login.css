@@ -1,0 +1,40 @@
+/* Login.css */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-form {
+    border: 2px solid grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 350px;
+    width: 300px;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+
+  }
+  
+  .login-form .MuiFormControl-root {
+    margin: 8px;
+    width: 80%;
+  }
+  
+  .login-form .MuiButton-root {
+    margin-top: 16px;
+  }
+  .h{
+    font-family: "Raleway", sans-serif;
+  }
+  .l-body{
+  
+      background-repeat: no-repeat;
+      background-image: url('/images/bg5.jpg');
+      background-size: cover;
+    
+  }
+
+  
