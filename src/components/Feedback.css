@@ -1,0 +1,146 @@
+/* .feedback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-image: url('/images/bg5.jpg');
+    background-size: cover;
+    font-family: "Raleway", sans-serif;
+}
+
+.feedback-form {
+    border: 2px solid grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 350px;
+    width: 300px;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    background-color: #f9f9f9;
+}
+
+.feedback input,
+.feedback textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.feedback textarea {
+    margin-bottom: 20px;
+}
+
+.feedback button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.feedback button:hover {
+    background-color: #0056b3;
+}
+
+.success-message {
+    color: green;
+    font-size: 16px;
+    text-align: center;
+}
+
+.error-message {
+    color: red;
+    font-size: 16px;
+    text-align: center;
+}
+
+.h {
+    font-family: "Raleway", sans-serif;
+} */
+.feedback {
+    background-image: url('/images/bg5.jpg'); /* Background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .feedback-form {
+    border: 2px solid grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px; /* Increased width of the form container */
+    padding: 24px; /* Increased padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    background: #fff; /* Form background color */
+    border-radius: 8px; /* Optional: Add border-radius for rounded corners */
+  }
+  
+  .feedback-form input,
+  .feedback-form textarea {
+    width: 100%;
+    padding: 12px; /* Increased padding inside input and textarea */
+    margin-bottom: 12px; /* Increased margin between inputs */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 18px; /* Increased font size for better readability */
+    font-family: "Raleway", sans-serif;
+  }
+  
+  .feedback-form button {
+    padding: 12px 24px; /* Increased padding inside button */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px; /* Increased font size of button */
+  }
+  
+  .feedback-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .rating {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .rating p {
+    margin-right: 10px;
+  }
+  
+  .star {
+    font-size: 24px;
+    color: #ddd;
+    cursor: pointer;
+  }
+  
+  .star.filled {
+    color: #ffbc00; /* Color for filled stars */
+  }
+  
+  .success-message {
+    color: green;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  

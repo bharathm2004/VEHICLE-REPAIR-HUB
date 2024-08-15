@@ -1,32 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
 
+/* Overall dashboard styling */
 .admin-dashboard {
-    padding: 20px;
-    font-family: "Raleway", sans-serif;
+  display: flex;
+  height: 100vh; /* Full height of the viewport */
+  font-family: 'Raleway', sans-serif; /* Apply Raleway font */
+}
+
+/* Side panel styling */
+.admin-side-panel {
+  width: 250px;
+  background-color: #3698e3; /* Updated background color */
+  color: white; /* Ensure text is visible on dark background */
+  padding: 15px;
+  height: 100%; /* Full height of the container */
+  position: fixed; /* Keep it fixed on the left side */
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column; /* Arrange items in a column */
+}
+
+.admin-side-panel h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.admin-side-panel ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1; /* Allow the list to grow and take available space */
+}
+
+.admin-side-panel ul li {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px; /* Rounded corners to list items */
+  display: flex;
+  align-items: center; /* Center icons and text vertically */
+  margin-bottom: 10px; /* Space between list items */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.admin-side-panel ul li:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.admin-side-panel ul li .icon {
+  margin-right: 15px; /* Adjust space between icon and text */
+  font-size: 1.2em; /* Ensure icon size is appropriate */
+}
+
+/* Content area styling */
+.admin-content {
+  flex-grow: 1;
+  margin-left: 270px; /* Offset by the width of the side panel and some extra space */
+  padding: 20px;
+  overflow-x: auto; /* Allow horizontal scrolling if needed */
+}
+
+.admin-content h3 {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 20px; /* Add space below the heading */
+}
+
+/* Styling for booking table */
+.booking-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0; /* Add space above and below the table */
+}
+
+.booking-table th,
+.booking-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+  font-size: 0.9em; /* Adjust font size for better fit */
+}
+
+.booking-table th {
+  background-color: #f4f4f4;
+  color: #333;
+  font-weight: 600;
+}
+
+.booking-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Zebra stripes for better readability */
+}
+
+.booking-table tbody tr:hover {
+  background-color: #f1f1f1; /* Highlight row on hover */
+}
+
+/* Styling for service table */
+.service-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0; /* Add space above and below the table */
+}
+
+.service-table th,
+.service-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+  font-size: 0.9em; /* Adjust font size for better fit */
+}
+
+.service-table th {
+  background-color: #f4f4f4;
+  color: #333;
+  font-weight: 600;
+}
+
+.service-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Zebra stripes for better readability */
+}
+
+.service-table tbody tr:hover {
+  background-color: #f1f1f1; /* Highlight row on hover */
+}
+
+.service-icon {
+  width: 50px; /* Adjust to fit within table cell */
+  height: auto; /* Maintain aspect ratio */
+}
+.feedback-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.feedback-table th, .feedback-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.feedback-table th {
+  background-color: #f4f4f4;
+}
+
+.feedback-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.chart-container {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+/* User Management Table Styles */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  text-align: left;
+}
+
+.user-table th,
+.user-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.user-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.user-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.user-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.user-table td {
+  vertical-align: top;
+}
+
+.user-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .user-table {
+    font-size: 14px;
   }
   
-  .admin-dashboard h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    font-family: "Raleway", sans-serif;
-    text-align: center;
-  }
-  
-  .admin-dashboard table {
-    width: 100%;
-    
-    border-collapse: collapse;
-  }
-  
-  .admin-dashboard th, .admin-dashboard td {
-    border: 1px solid #ddd;
+  .user-table th,
+  .user-table td {
     padding: 8px;
-    
   }
-  
-  .admin-dashboard th {
-    background-color: #f2f2f2;
-    text-align: left;
-    
-  }
-  
-   
+}
+/* Add to your CSS file */
+
+.user-table button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.user-table button:hover {
+  background-color: #d32f2f;
+}
+

@@ -12,6 +12,7 @@ import Checkbox from '@mui/material/Checkbox';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import { useNavigate } from 'react-router-dom';
 import './Register.css';
+import axios from 'axios';
 
 const Register = () => {
   const navigate = useNavigate();
@@ -49,39 +50,58 @@ const Register = () => {
     return password.length >= 8;
   };
 
-  const handleSignup = (e) => {
-    e.preventDefault();
-    const newErrors = {
-      name: !formData.name,
-      email: !validateEmail(formData.email),
-      phone: !validatePhone(formData.phone),
-      address: !formData.address,
-      password: !validatePassword(formData.password),
-      confirmPassword: !formData.confirmPassword || formData.password !== formData.confirmPassword,
-      termsAccepted: !formData.termsAccepted,
-    };
-    setErrors(newErrors);
+  
 
-    if (Object.values(newErrors).every(error => !error)) {
-      
-      const existingUsers = JSON.parse(localStorage.getItem('users')) || [];
-      
- 
-      const newUser = { 
-        name: formData.name, 
-        email: formData.email, 
-        phone: formData.phone, 
-        address: formData.address, 
-        password: formData.password 
-      };
-      existingUsers.push(newUser);
-     
-      localStorage.setItem('users', JSON.stringify(existingUsers));
-      
-      console.log('Form Submitted', formData);
-      navigate('/login');
-    }
+const handleSignup = async (e) => {
+  e.preventDefault();
+
+  // Validate the form data
+  const newErrors = {
+    name: !formData.name,
+    email: !validateEmail(formData.email),
+    phone: !validatePhone(formData.phone),
+    address: !formData.address,
+    password: !validatePassword(formData.password),
+    confirmPassword: !formData.confirmPassword || formData.password !== formData.confirmPassword,
+    termsAccepted: !formData.termsAccepted,
   };
+  setErrors(newErrors);
+
+  // If no errors, proceed with form submission
+  if (Object.values(newErrors).every(error => !error)) {
+    try {
+      const response = await axios.post(
+        "http://localhost:8080/api/auth/register",
+        {
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          address: formData.address,
+          password: formData.password,
+        }
+      );
+      
+      console.log('Response:', response.data);
+      
+      // // Optionally store the user data locally if needed
+      // const existingUsers = JSON.parse(localStorage.getItem('users')) || [];
+      // existingUsers.push(formData);
+      // localStorage.setItem('users', JSON.stringify(existingUsers));
+      // console.log(existingUsers);
+
+      const existingUsers = JSON.parse(localStorage.getItem('user')) || [];
+existingUsers.push(response.data); // Use response.data if it contains the new user info
+localStorage.setItem('user', JSON.stringify(existingUsers));
+
+
+      // Redirect to login page
+      navigate('/login');
+    } catch (error) {
+      console.error('Error submitting form:', error);
+    }
+  }
+};
+
 
   const handleChange = (e) => {
     const { name, value, checked, type } = e.target;

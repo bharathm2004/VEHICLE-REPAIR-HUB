@@ -1,0 +1,189 @@
+/* .profile-container {
+    max-width: 600px;
+ 
+ 
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    justify-content: center;
+  }
+  
+  .profile-header {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .profile-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .profile-item-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .profile-item-content span {
+    margin-right: 10px;
+    flex: 1;
+  }
+  
+  .plain-input {
+    flex: 1;
+    margin-right: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .edit-icon {
+    cursor: pointer;
+  }
+  
+  .submit-button {
+    margin-top: 20px;
+  }
+  
+ 
+  .profile-item-content input[name="email"] {
+    background-color: #e9ecef; 
+    cursor: not-allowed; 
+    border: 1px solid #ddd;
+  }
+  
+  .profile-item-content span,
+  .profile-item-content input {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .profile-item-content .edit-icon {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .p-body{
+    background-image: url("/images/bg8.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    
+  } */
+
+  .profile-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  }
+  
+  .profile-header {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .profile-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .profile-item-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .profile-item-content span {
+    margin-right: 10px;
+    flex: 1;
+  }
+  
+  .plain-input {
+    flex: 1;
+    margin-right: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .edit-icon {
+    cursor: pointer;
+  }
+  
+  .submit-button {
+    margin-top: 20px;
+  }
+  
+  .profile-item-content input[name="email"] {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+    border: 1px solid #ddd;
+  }
+  
+  .profile-item-content span,
+  .profile-item-content input {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .profile-item-content .edit-icon {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .p-body {
+    background-image: url("/images/bg8.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  
+  .delete-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .delete-profile-container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  }
+  
+  .delete-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .delete-form .profile-item {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  
+  .delete-form .profile-item-content {
+    width: 100%;
+  }
+  
+  .delete-form .plain-input {
+    width: 100%;
+  }
+  
